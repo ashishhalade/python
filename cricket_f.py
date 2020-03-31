@@ -1,10 +1,4 @@
-"""
-EMP ID -142910
-EMP NAME-ASHISH HALADE
-PROBLEM STATEMENT-CRICKET DATA ANALYSIS
 
-@author: ashishh5
-"""
 """Cricket data analysis"""
 import getpass
 import compute_1 as c
