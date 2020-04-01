@@ -1,7 +1,15 @@
 language: python
 python:
-     - "3.6"
-script: python python/factorial.py
-branches:
-     only:
-        - master
+  - 2.7
+  - 3.5
+  - 3.6
+before_install:
+  - python --version
+  - pip install -U pip
+  - pip install -U pytest
+  - pip install codecov
+install:
+  - pip install ".[test]" . # install package + test dependencies
+script: factorial.py # run tests
+after_success:
+  - codecov # submit coverage
